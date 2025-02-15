@@ -151,7 +151,7 @@ footer{
     display: flex; /* Change element to flex box */
     justify-content: center; /* Center social links */
     gap: 30px; /* Spacing between links */
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 
 .social-links li a {
