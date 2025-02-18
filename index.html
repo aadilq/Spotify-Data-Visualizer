@@ -1,74 +1,96 @@
+<!--DOCTYPE-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Data Visualizer</title> 
     <link rel="stylesheet" href="style.css">
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAA
     AAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAhMRoAAAAAABkgGQAUExkAYdkeABQUGQBh2h4ARpUcAFzNHgBf1B4AExA
     ZAFnFHQAzZRsAYNceAAAAAAAAAAAAERERERERERERER3d3dEREREd3d3d3dEREd3d3d3d3RER3d3d3d3dER3dWd3
     FXd3RHd3bIE3Y3dEd3X3d01Xd0R3dVVVa3d3RHd3d3d1lXdEd1VVVVVXd0RHd3d3d3d0REd3d3d3d3RERHd3d3d3
-    RERERHd3d0RERERERERERERH//wAA+B8AAOAHAADAAwAAwAMAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAMADAAD
-    AAwAA4AcAAPgfAAD//wAA"
-    rel="icon" type="image/x-icon">
+    RERERHd3d0RERERERERERERH//wAA+B8AAOAHAADAAwAAwAMAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAMADAADAAwAA4AcAAPgfAAD//wAA"
+    rel="icon" type="image/x-icon"> <!--Favicon-->
+    <title>Spotify Data Visualizer</title>
 </head>
-<body>
-    <header>
+<body id="container">
+    <!--Concepts included:
+        HTML tags
+            Text
+            Lists
+            Images
+            Links
+            Footer
+            Div/Header/Section containers
+        CSS selectors
+            Class
+            HTML tag
+        Box Model
+        Flex boxes
+        Favicons
 
+        Concepts not included:
+        Nav bars
+        ID selectors (need to change some more to be IDs)
+        -->
+
+    <header>
         <div>
             <h1 class="title">Spotify Data Visualizer</h1>
-            <img src="./logo.png" alt="Spotify Logo">
         </div>
-
+        <img src="./logo.png" alt="Spotify logo">
     </header>
 
+
     <section class="info-section">
-        <div>
+        <div class="left-container">
             <h2>About</h2>
-            <p>Welcome to the <b>Spotify Data Visualizer</b>. This project takes a large dataset of music information and organizes it into categories that you 
-            can select</p>
+            <p>Welcome to the <b>Spotify Data Visualizer</b>. This project takes a large data set of music information and 
+                organizes it into categories you can select!</p>
         </div>
-        <div>
+        <div class="right-container">
             <h2>Visualizations</h2>
             <ul>
                 <li>Most Common Genre (Bar Graph)</li>
                 <li>Most Average Year Song Release (Pie Chart)</li>
-                <li>Loudest Song in Decibels (Linear Graph)</li>
+                <li>Loudest Song in Decibles (Linear Graph)</li>
             </ul>
+            <!-- <img src="https://icons.veryicon.com/png/o/miscellaneous/resume-breakpoint-simple-line-mark/music-435.png" alt="The spotify logo without the text"> -->
         </div>
     </section>
 
     <section class="result-section">
         <div id="result-container">
-            <h2 id="results">Results</h2>
+            <h2 id="result">Result</h2>
             <div class="button-container">
                 <button class="spotify-button result-button">Most Common Genre</button>
                 <button class="spotify-button result-button">Year Song Released</button>
                 <button class="spotify-button result-button">Loudest Song</button>
             </div>
-
             <div class="result-card" id="result-card">
                 <div class="result-content">
-                    <h4 class="result-intro-text">Select a category and chart type to visualize data</h4>
+                    <h4 class="result-intro-text">Select a category and chart type to visualize data.</h4>
                 </div>
-
             </div>
-
         </div>
     </section>
 
     <footer>
         <ul class="social-links">
             <li>
-                <a href="https://www.linkedin.com/in/aadil-qureshi1/">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/daniel-ek-1b52093a/">LinkedIn</a>
             </li>
             <li>
-                <a href="https://github.com/aadilq/aadilq">GitHub</a>
+                <a href="https://github.com/spotify">GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/spotify/">Instagram</a>
             </li>
         </ul>
     </footer>
-<script src="https://cdn.jsdeliver.net/npm"></script>
-<script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="script.js"></script>
+
 </body>
 </html>
