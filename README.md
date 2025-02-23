@@ -8,7 +8,7 @@ Welcome to the Spotify Data Visualizer. This project takes a large data set of m
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/aadilq/Spotify-Data-Visualizer/blob/main/spotify%20data%20visualizer.jpg)
 
 
 
